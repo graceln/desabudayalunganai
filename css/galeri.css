@@ -1,0 +1,72 @@
+/* Galeri */
+.galeri .baris,
+.galeri .baris1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeri .baris .image,
+.galeri .baris1 .image {
+    flex: 1 1 55rem;
+    max-width: 55rem; 
+    box-sizing: border-box; 
+}
+
+.galeri .baris .image img,
+.galeri .baris1 .image img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.galeri .bening .image img,
+.galeri .tapung-udeng .image img,
+.galeri .tajau .image img,
+.galeri .inoq .image img,
+.galeri .taweq .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+.galeri .baris .content,
+.galeri .baris1 .content-right {
+    flex: 1 1 45rem;
+    padding: 8rem;
+}
+
+.galeri .baris .content h3,
+.galeri .baris1 .content-right h3 {
+    font-size: 3rem;
+}
+
+.galeri .content p,
+.galeri .baris1 .content-right p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.galeri .baris1 {
+    direction: rtl; 
+}
+
+.galeri .baris1 .content-right {
+    direction: ltr; 
+}
+
+.galeri .content-right p {
+    text-align-last: left;
+}
+
+.line {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+}
